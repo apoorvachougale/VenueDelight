@@ -1,0 +1,79 @@
+
+/*body  { 
+    background-image: url("pic2.jpg");
+}
+
+h2{
+    color: silver;
+    font-family: sans-serif;
+}
+
+h1{
+    color: silver;
+    font-style: italic;
+}
+
+h3{
+    color: silver;
+    font-style: italic;
+}
+*/
+table{
+    margin-top: 10%;
+    border: solid green ;
+    background-color: #ccccff;
+    
+    }
+    
+    tr{
+        color: black;
+    }
+    
+    
+    
+    
+    .mydiv{
+        height: 200px;
+        width: 300px;
+        border-style: dashed; 
+        float: left;
+        /*position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;*/
+    }
+    
+    .mydiv1{
+        height: 200px;
+        width: 300px;
+        border-style: dashed;
+        float: left;
+        position: absolute;
+       display: inline;
+       /*top: 0;
+        bottom: 0;*/
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    
+    .mydiv2{
+        height: 200px;
+        width: 300px;
+        border-style: dashed;
+        float:right; 
+    }
+    
+    .mydiv3{
+        height: 200px;
+        width: 300px;
+        border-style: dashed;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }

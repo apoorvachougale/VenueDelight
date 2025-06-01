@@ -1,0 +1,638 @@
+
+/*---------------------Login and register css ------------------*/
+::selection{
+  color: #fff;
+  background: #e37070;
+}
+
+.card-front,.card-back{
+  width: 450px;
+  height:600px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+  position: absolute;
+  padding: 55px;
+  box-shadow: border-box;
+  backface-visibility: hidden;
+
+}
+
+
+
+.card-back 
+{
+  transform: rotateY(180deg);
+}
+
+.card-front,.card-back header{
+  font-size: 20px;
+  font-weight: 500;
+  color:#8f1537;
+
+}
+.card-front form{
+  margin: 40px 0;
+}
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+/*form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}*/
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+  form input{
+  width: 100%;
+  height: 90%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #e37070;
+  border-radius: 5px;
+  border: 2px solid #8f1537;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+
+form #question{
+  width: 100%;
+  height: 60%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #e37070;
+  border-radius: 5px;
+  border: 2px solid #8f1537;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+  color:gray;
+}
+
+form option{
+  color:black;
+}
+
+ 
+form .field input:focus,
+form .field.valid input{
+  border-color: #e37070;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #e37070;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+.form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.card-back a{
+  color: #8f1537;
+  
+
+}
+.card-front a{
+  color:#8f1537;
+}
+
+
+
+form input[type="submit"]{
+  height: 45px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #8f1537;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: #e37070;
+}
+
+.inner-box
+{
+  position:relative;
+  width:100%;
+  height:100%;
+  transition: transform 1s;
+  transform-style:preserve-3d;
+  bottom:-20%;
+}
+.cardd{
+  width:350px;
+  height:500px;
+  perspective: 1000px;
+  align-items: center;
+
+  }
+  
+  a{
+    color:#8f1537;
+    text-decoration: none;
+  }
+  .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+    }
+    /*define the modal-content background*/
+     
+    .modal-content {
+       
+        margin: 5% auto 15% auto;
+        width:50%;
+    }
+    /*define the close button*/
+     
+    .close1 {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        color: #000;
+        font-size: 40px;
+        font-weight: bold;
+
+
+        
+    }
+    /*define the close hover and focus effects*/
+     
+    .close1:hover,
+    .close1:focus {
+        color: red;
+        cursor: pointer;
+    }
+     
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+     .popup {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top:-45%
+  
+}
+span
+{
+ font-size: 15px;
+ margin-left: 10px;
+}
+
+     
+
+.container2
+{
+  width:100%;
+  height:50vh;
+  font-family:sans-serif;
+  background-color:;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+
+/*confrim password */
+ 
+ form .error-text{
+  background: #F8D7DA;
+  padding: 2px 0px;
+  border-radius: 5px;
+  color: red;
+  border: 1px solid #F5C6CB;
+  display: none;
+  font-size:15px;
+
+}
+ .error-text.matched{
+  background: #D4EDDA;
+  color: #588C64;
+  border-color: #8f1537;
+}
+ /*.field{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  margin: 15px 0;
+  position: relative;
+}*/
+/*form .field input{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8f1537;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s;
+}*/
+form .field input::placeholder{
+  font-size: 16px;
+}
+form .field input:focus{
+  border-color: #e37070;
+  box-shadow: inset 0 0 3px #e37070;
+}
+form .field .show1{
+  position:absolute;
+  right: 6px;
+  top: 20%;
+ /* transform: translateY(-50%);*/
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+  display: none;
+  color:#8f1537;
+  text-transform: uppercase;
+
+
+}
+form .field .show1.active{
+  color: #e37070;
+}
+form button{
+  width: 100%;
+  height: 45px;
+  margin: 3px 0 10px 0;
+  border: none;
+  outline: none;
+  background: #8f1537;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: no-drop;
+}
+form button.active{
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s;
+}
+form button.active:hover{
+  background: #e37070;
+}
+
+
+/****************************owner*****************************/
+.main-wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Nunito",sans-serif;
+   z-index: 0;
+  
+   }
+
+/* entire container, keeps perspective */
+.card1-container {
+  perspective: 500px;
+  margin-bottom: 40px;
+  width: 450px;
+  margin: 0 auto;
+   
+
+
+}
+
+/* flip the pane when hovered */
+.card1-container.rotate .card1 {
+  transform: rotateY(180deg);
+}
+/* flip speed goes here */
+.card1 {
+  transition: transform 0.85s;
+  transform-style: preserve-3d;
+  position: relative;
+
+
+
+}
+
+/* hide back of pane during swap */
+.login-form,
+.signup-form {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+   
+
+  /*height:800px;*/
+}
+
+/* front pane, placed above back */
+.login-form {
+  z-index: 2;
+
+}
+
+/* back, initially hidden pane */
+.signup-form {
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+
+.card1 {
+  background: #ffffff;
+  border-radius: 4px;
+  color:white;
+
+
+}
+
+.card1-container,
+.login-form,
+.signup-form {
+  height: 800px;
+  border-radius: 4px;
+
+
+}
+.login-form,
+.signup-form {
+  width: 100%;
+  height: 550px;
+  border:2px solid #8f1537 ;
+
+
+ 
+}
+label
+{
+  margin-left: 25px;
+}
+.card1 .tit {
+  margin: 10px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #8f1537;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+
+  
+}
+.card1 .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  box-shadow: none;
+  flex: 1;
+   background-color: #8f1537;*/
+ }
+
+.card1 .footer {
+  /*border-top: 1px solid #eeeeee;*/
+  color: #8f1537;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  font-size:18px;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  /*line-height: 36px;*/
+  padding: 0 16px;
+  font-family: inherit;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+
+.btn-rotate {
+  color: white;
+  background-color:#ec7070 ;
+  font-size: 18px;
+  left:10%;
+
+   
+   
+ }
+
+ .btn-r
+ {
+    margin-top:80%;
+    margin-left: -20%;
+ }
+
+.btn-rotate:hover {
+  color: white;
+  background-color:#8f1537;
+}
+
+.btn-rotate:focus {
+  outline: none;
+  border: none;
+}
+
+.btn-submit {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #8f1537;
+  font-weight: bold;
+  background-color:white;
+}
+
+.btn-submit:hover {
+  color: white;
+  background-color: #ec7070;
+}
+
+.btn-submit:focus {
+  outline: none;
+  border: none;
+}
+
+form {
+  width: 100%;
+}
+
+.input-field1 {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field1 input {
+  width: 100%;
+  max-height: 20px;
+  padding: 18px;
+  margin-bottom: 10px;
+  border: 2px solid #8f1537;
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: #8f1537;
+}
+::-moz-placeholder {
+  color: #8f1537;
+}
+:-ms-input-placeholder {
+  color: #8f1537;
+}
+::-ms-input-placeholder {
+  color:  #8f1537;
+}
+::placeholder {
+  color:  #8f1537;
+}
+
+.input-field1 input:focus {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.see-password {
+  position: absolute;
+  right: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.group input {
+  padding-right: 40px;
+}
+
+.for{
+    color:#8f1537;
+    font-size: 15px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+#questions{
+    width:100%;
+    height:25px;
+    border:2px solid #8f1537;
+    border-radius: 5px;
+}
+
+
+.error-text{
+  background: #F8D7DA;
+  padding: 2px 0px;
+  border-radius: 5px;
+  color: red;
+  border: 1px solid #F5C6CB;
+  display: none;
+  font-size:18px;
+
+}
+ .error-text.matched{
+  background: #D4EDDA;
+  color: #588C64;
+  border-color: #8f1537;
+}
+         

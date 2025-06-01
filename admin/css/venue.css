@@ -1,0 +1,39 @@
+
+/**{
+  box-sizing: border-box;
+}*/
+
+.content-table {
+  border-collapse: collapse;
+  margin:6% 18%;
+  font-size: 0.9em;
+  min-width: 250px;
+  height: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/*table .container{
+  margin: 10% 20%;
+  
+}
+.column {
+
+  display:flex-inline;
+  flex-flow:wrap;
+  flex-direction:row;
+  justify-content: space-around;
+  padding:5px;
+  flex-basis:10%;
+  float: left;
+  width: 30%;
+  height: 400px;
+  margin:15px; 
+  box-shadow: 5px 5px 5px 5px #888888;
+
+}*/
